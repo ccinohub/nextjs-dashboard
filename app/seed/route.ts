@@ -110,7 +110,7 @@ export async function GET() {
     //   seedRevenue(),
     // ]);
 
-    const _ = await sql.begin(() => [
+    await sql.begin(() => [
       seedUsers(),
       seedCustomers(),
       seedInvoices(),
